@@ -63,6 +63,7 @@ namespace reExp.Controllers.regex
         }
         public string SavedUrl
         {
+            //dsdsd
             get;
             set;
         }
@@ -94,6 +95,7 @@ namespace reExp.Controllers.regex
         {
             return new List<OptionDescribtion>()
             {
+                
                 new OptionDescribtion(){Title = "CultureInvariant", Comment = "Culture of the server is " + Thread.CurrentThread.CurrentCulture.ToString() + ". Mark this option to use InvariantCulture instead."/*+ ". Specifies that cultural differences in language is ignored. See Performing Culture-Insensitive Operations in the RegularExpressions Namespace for more information."*/, RegexOption = RegexOptions.CultureInvariant }, 
                 new OptionDescribtion(){Title = "IgnoreCase", Comment = "Specifies case-insensitive matching.", RegexOption = RegexOptions.IgnoreCase},
                 new OptionDescribtion(){Title = "Multiline", Comment = "Multiline mode. Changes the meaning of ^ and $ so they match at the beginning and end, respectively, of any line, and not just the beginning and end of the entire string.", RegexOption = RegexOptions.Multiline},
